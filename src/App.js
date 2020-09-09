@@ -7,9 +7,7 @@ function App() {
   return (
     <div className="app">
       <div className="app__body">
-        {/* Sidebar com contatos e grupos*/}
         <Sidebar></Sidebar>
-        {/* Componente de chat */}
         <Chat></Chat>
       </div>
 
