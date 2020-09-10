@@ -2,6 +2,7 @@ import React from 'react'
 import './Sidebar.css'
 import {DonutLarge, MoreVert, Chat, SearchOutlined} from '@material-ui/icons'
 import {IconButton, Avatar} from '@material-ui/core'
+import SidebarChat from '../SidebarChat/SidebarChat'
 
 function Sidebar(){
     return(
@@ -23,8 +24,7 @@ function Sidebar(){
             </div>
             <div className="sidebar__search">
                 <div className="sidebar__searchContainer">
-                    <SearchOutlined>
-                        
+                    <SearchOutlined> 
                     </SearchOutlined>
                     <input placeholder="Procure ou inicie uma nova conversa"/>
                 </div>
@@ -32,6 +32,9 @@ function Sidebar(){
 
             <div className="sidebar_chats">
                 {/* SidebarChat */}
+                <SidebarChat></SidebarChat>
+                <SidebarChat></SidebarChat>
+                <SidebarChat></SidebarChat>
             </div>
         </div>
     )
